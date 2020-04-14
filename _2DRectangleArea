@@ -1,0 +1,21 @@
+using System;
+
+namespace _2DRectangleArea
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double x1 = Double.Parse(Console.ReadLine());
+            double y1 = Double.Parse(Console.ReadLine());
+            double x2 = Double.Parse(Console.ReadLine());
+            double y2 = Double.Parse(Console.ReadLine());
+
+            double x = Math.Abs(x1 - x2);
+            double y = Math.Abs(y1 - y2);
+
+            Console.WriteLine(x * y);
+            Console.WriteLine(2 * (x +y));
+        }
+    }
+}
