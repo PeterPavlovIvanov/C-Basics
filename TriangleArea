@@ -1,0 +1,14 @@
+using System;
+
+namespace TriangleArea
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double side = Double.Parse(Console.ReadLine());
+            double h = Double.Parse(Console.ReadLine());
+            Console.WriteLine($"Triangle area = {h * side / 2}");
+        }
+    }
+}
