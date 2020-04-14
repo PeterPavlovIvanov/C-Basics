@@ -1,0 +1,21 @@
+using System;
+using System.Globalization;
+
+namespace _1000DaysAfterBirth
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            CultureInfo provider = CultureInfo.InvariantCulture;
+
+            string birth = Console.ReadLine();
+
+            DateTime date = DateTime.ParseExact(birth, "dd-MM-yyyy", provider);
+            date = date.AddDays(1000);
+
+            string s = date.ToString("dd-MM-yyyy", provider);
+            Console.WriteLine(s);
+        }
+    }
+}
