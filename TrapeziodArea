@@ -1,0 +1,15 @@
+using System;
+
+namespace TrapeziodArea
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double top = Double.Parse(Console.ReadLine());
+            double bot = Double.Parse(Console.ReadLine());
+            double h = Double.Parse(Console.ReadLine());
+            Console.WriteLine((top+bot) / 2 * h);
+        }
+    }
+}
