@@ -1,0 +1,19 @@
+using System;
+
+namespace RectangleArea
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Console.WriteLine("Enter the first side:");
+            double sideA = Double.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Now enter the second side:");
+            double sideB = Double.Parse(Console.ReadLine());
+
+            //Console.WriteLine("The area is:");
+            Console.WriteLine(sideA*sideB);
+        }
+    }
+}
