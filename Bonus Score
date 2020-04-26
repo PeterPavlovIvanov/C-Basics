@@ -1,0 +1,33 @@
+using System;
+
+namespace BonusScore
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double n = Double.Parse(Console.ReadLine());
+            double bonus = 0;
+            if(n%2 == 0)
+            {
+                bonus += 1; 
+            }else if (n % 5 == 0 && n % 10 != 0)
+            {
+                bonus += 2;
+            }
+            if (n <= 100)
+            {
+                bonus += 5;
+            }else if (n <= 1000) 
+            {
+                bonus += n / 5;
+            }
+            else
+            {
+                bonus += n / 10;
+            }
+            Console.WriteLine(bonus);
+            Console.WriteLine(bonus+n);
+        }
+    }
+}
