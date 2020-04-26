@@ -1,0 +1,30 @@
+using System;
+
+namespace MetricConverter
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double num = Double.Parse(Console.ReadLine());
+            String from = Console.ReadLine();
+            String to = Console.ReadLine();
+
+            if (from.Equals("mm")){
+                num = num / 1000;
+            }else if (from.Equals("cm"))
+            {
+                num = num / 100;
+            }
+
+            if (to.Equals("mm"))
+            {
+                num = num * 1000;
+            }else if (to.Equals("cm"))
+            {
+                num = num * 100;
+            }
+            Console.WriteLine(String.Format("{0:0.000}",num));
+        }
+    }
+}
